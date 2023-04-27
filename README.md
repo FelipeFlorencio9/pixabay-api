@@ -1,2 +1,2 @@
 # unsplash-api
-Consumo da API de unsplash
+Projeto para consumir api de imagens

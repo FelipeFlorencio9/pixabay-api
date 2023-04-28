@@ -14,45 +14,35 @@
         <link rel="stylesheet" href="./css/gallery.css" />
         <link rel="stylesheet" href="./css/card.css" /> -->
         <script src="./components/phrase.js"></script>
+        <script src="./components/search-box.js"></script>
         <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/b2396ffade.js" crossorigin="anonymous"></script>
         <title>Pixabay API</title>
     </head>
     <body>
         <header>
-            
-                <img src="./public/logo-128px.png" class='logo'alt="">
-            
-<!--            
-            <phrase-content 
-                text='Why not look on Pixabay?'>
-            </phrase-content> -->
-           
+            <img src="./public/logo-128px.png" class='logo'alt="">
         </header>
         <main>
-            <section class="container-gallery"></section>
+            <phrase-content 
+                text='Why not look on Pixabay?'>
+            </phrase-content>
+            <search-box
+                placeholder="Search"
+                id="search-input">
+            </search-box>
         </main>
         <footer>
-            <ul class="social">
-                <li>
-                    <a href="https://github.com/fernandoleonid"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/fernandoleonid/"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/fernandoleonid"><i class="fab fa-youtube"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/fernandoleonid/"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/fernandoleonid"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/fernandoleonid/"><i class="fab fa-facebook-f"></i></a>
-                </li>
-            </ul>
-            <div class="text">Copyright 2021 © | Fernando Leonid</div>
+            <phrase-content
+                text="Copyright 2023 | Felipe Florêncio"
+                tag="p"
+                fontsize="1rem">
+            </phrase-content>
         </footer>
+        <script src="./index.js" ></script>
     </body>
 </html>

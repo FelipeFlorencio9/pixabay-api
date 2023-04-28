@@ -5,10 +5,12 @@ class phrase extends HTMLElement {
         super()
         this.shadow = this.attachShadow({mode: 'open'})
         this.text = 'Defina uma frase para usar o componente'
+        this.tag = 'h1',
+        this.fontsize = '1.5rem'
     }
 
     static get observedAttributes() {
-        return ['text']
+        return ['text','tag','fontsize']
     }
 
 
@@ -23,13 +25,20 @@ class phrase extends HTMLElement {
             const css = document.createElement('style');
             css.textContent = `
                 .phrase{
-                    background-color: #fff;
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: ${this.fontsize};
+                    line-height: 3rem;
+                    letter-spacing: -0.07em;
+                    color: #FFFFFF;
+                    text-align: center
                 }
             `
             return css
     }
     component(){
-        const phrase = document.createElement('h1')
+        const phrase = document.createElement(this.tag)
         phrase.classList.add('phrase');
         phrase.textContent = this.text;
         return phrase

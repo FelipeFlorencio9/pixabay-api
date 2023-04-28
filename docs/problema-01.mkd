@@ -1,0 +1,7 @@
+## A api do Unsplash é privada e não permite clientes terceirados.
+
+https://help.unsplash.com/en/articles/2511257-guideline-replicating-unsplash
+
+🚫 an unofficial Unsplash for Android app allows users to search for Unsplash images and download them. Without the API, the app has no content and no value to users.
+
+Foi trocada pelo pixabay

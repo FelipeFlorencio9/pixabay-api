@@ -1,0 +1,4 @@
+.logo img{
+    grid-area: header;
+    display: grid;
+}

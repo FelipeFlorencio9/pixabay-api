@@ -1,6 +1,0 @@
-## Propriedades do Unsplash
-
-- Fonte :
-SF Pro on macOS and Segoe UI on Windows.
-- Cor Primária
-- Cor Secundária

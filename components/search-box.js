@@ -4,7 +4,8 @@ class searchBox extends HTMLElement {
     constructor() {
         super()
         this.shadow = this.attachShadow({mode: 'open'})
-        this.placeholder = 'PlaceHolder Default'
+        this.placeholder = 'PlaceHolder Default';
+        this.boxValue = 'Search'
     }
 
     static get observedAttributes() {
@@ -81,16 +82,26 @@ class searchBox extends HTMLElement {
     component(){
         const search = document.createElement('div')
         search.classList.add('search-container');
-        search.innerHTML = `
+
+        const icon = document.createElement('i');
+        icon.classList.add('fa-solid', 'fa-magnifying-glass');
+        icon.for = 'serch-input';
+
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.classList.add('search-input');
+        input.placeholder = this.placeholder;
+        input.id = 'search-input';
+
+        // input.addEventListener('keypress', ({key,target}) => {
+        //     if(key === 'Enter'){
+        //         window.localStorage.setItem('query', target.value);
+        //     }
+        // })
         
-        <i class="fa-solid fa-magnifying-glass" for="search-input"></i>
-        <input
-            type="text"
-            class="search-input"
-            id="search-input"
-            placeholder="${this.placeholder}"
-        />
-        `;
+        search.append(
+            icon, input
+        )
         return search;
     }
         

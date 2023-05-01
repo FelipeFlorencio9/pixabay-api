@@ -1,0 +1,16 @@
+.account-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24rem;
+    transform: translateY(-16%);
+
+}

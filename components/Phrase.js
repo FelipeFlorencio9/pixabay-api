@@ -6,11 +6,12 @@ class Phrase extends HTMLElement {
         this.shadow = this.attachShadow({mode: 'open'})
         this.text = 'Defina uma frase para usar o componente'
         this.tag = 'h1',
-        this.fontsize = '1.5rem'
+        this.fontsize = '1.5rem';
+        this.textalign = 'center';
     }
 
     static get observedAttributes() {
-        return ['text','tag','fontsize']
+        return ['text','tag','fontsize','textalign']
     }
 
 
@@ -32,7 +33,7 @@ class Phrase extends HTMLElement {
                     line-height: 3rem;
                     letter-spacing: -0.07em;
                     color: #FFFFFF;
-                    text-align: center
+                    text-align: ${this.textalign}
                 }
             `
             return css

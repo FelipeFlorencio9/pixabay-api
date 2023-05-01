@@ -2,6 +2,9 @@ import { fetchPhotos } from "../api/config.js"
 
 export async function page () {
 
+
+    const body = document.querySelector('body')
+    body.style = 'background-color: #52B312'
     const container = document.createElement('div')
     container.classList.add (
         'home-container',

@@ -1,6 +1,6 @@
 'use stricts'
 
-class SearchBox extends HTMLElement {
+class InputBox extends HTMLElement {
     constructor() {
         super()
         this.shadow = this.attachShadow({mode: 'open'})
@@ -25,22 +25,26 @@ class SearchBox extends HTMLElement {
             css.textContent = `
 
             @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-            .search-container {
+            .input-container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 32px;
                 position: relative;
             }
-            .search-input {
+            .input {
+                position: relative;
                 font-family: Poppins, sans-serif;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.5px;
                 height: 100%;
                 font-size: 24px;
                 border: 1px solid #EDEEF0;
                 box-shadow: 0px 2px 20px rgba(18, 27, 33, 0.1);
                 border-radius: 56px;
                 padding: 12px 12px 12px 44px;
-                width: 76%;
+                width: 303px;
 
             }
             a{
@@ -58,7 +62,7 @@ class SearchBox extends HTMLElement {
     }
     component(){
         const search = document.createElement('div')
-        search.classList.add('search-container');
+        search.classList.add('input-container');
 
         const label = document.createElement('a');
         label.for = 'searchinput';
@@ -74,9 +78,9 @@ class SearchBox extends HTMLElement {
         
         const input = document.createElement('input');
         input.type = 'text';
-        input.classList.add('search-input');
+        input.classList.add('input');
         input.placeholder = this.placeholder;
-        input.id = 'search-input';
+        input.id = 'input';
 
         
         // input.addEventListener('keypress', ({key,target}) => {
@@ -86,7 +90,7 @@ class SearchBox extends HTMLElement {
         // })
         
         search.append(
-            label,input
+            input
         )
         return search;
     }
@@ -94,7 +98,7 @@ class SearchBox extends HTMLElement {
 
     }
 
-customElements.define('search-box', SearchBox);
+customElements.define('input-box', InputBox);
 
 
 

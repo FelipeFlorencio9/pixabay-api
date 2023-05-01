@@ -8,7 +8,7 @@ function eventSearch(){
     const test = document.querySelector('search-box')
         .shadow.childNodes[0].children[1].addEventListener("keypress", ({key,target})=>{
             if(key === "Enter"){
-               
+               route()
         }
     })
     console.log(test);

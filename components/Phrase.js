@@ -8,10 +8,11 @@ class Phrase extends HTMLElement {
         this.tag = 'h1',
         this.fontsize = '1.5rem';
         this.textalign = 'center';
+        this.lineheight = '3rem';
     }
 
     static get observedAttributes() {
-        return ['text','tag','fontsize','textalign']
+        return ['text','tag','fontsize','textalign','lineheight']
     }
 
 
@@ -30,7 +31,7 @@ class Phrase extends HTMLElement {
                     font-style: normal;
                     font-weight: 600;
                     font-size: ${this.fontsize};
-                    line-height: 3rem;
+                    line-height: ${this.lineheight};
                     letter-spacing: -0.07em;
                     color: #FFFFFF;
                     text-align: ${this.textalign}

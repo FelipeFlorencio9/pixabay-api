@@ -1,0 +1,12 @@
+.about-container{
+
+}
+.about-container ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-container li{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,3 @@
+Não consegui fazer a transição de busca para os resultados devido ao modo modo que a página foi montada.
+
+Devo fazer outro ajuste de layout para usar as rotas.

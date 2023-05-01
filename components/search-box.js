@@ -43,7 +43,7 @@ class searchBox extends HTMLElement {
                 width: 76%;
 
             }
-            button{
+            a{
                 position: absolute;
                 top: 12%;
                 left: 5%;
@@ -60,17 +60,18 @@ class searchBox extends HTMLElement {
         const search = document.createElement('div')
         search.classList.add('search-container');
 
-        const label = document.createElement('button');
-        label.for = 'search-input';
-
+        const label = document.createElement('a');
+        label.for = 'searchinput';
+        label.id = 'button-search';
+        label.href = '/search'
+        label.onclick = route;
         const icon = document.createElement('img');
         icon.src = '../public/search-32px.png';
 
-        icon.onclick = () =>{
-            console.log('button clicked');
-        }
-        label.append(icon)
 
+        
+        label.append(icon)
+        
         const input = document.createElement('input');
         input.type = 'text';
         input.classList.add('search-input');

@@ -2,7 +2,7 @@
 
 const routes = {
     '/'         : "/pages/home.js",
-    '/search' : "/pages/search.js",
+    '/search' :     "/pages/search.js",
     '/azul'     : "/pages/azul.js",
 }
 

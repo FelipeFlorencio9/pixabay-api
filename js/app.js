@@ -8,16 +8,20 @@ function eventSearch(){
     const test = document.querySelector('search-box')
         .shadow.childNodes[0].children[1].addEventListener("keypress", ({key,target})=>{
             if(key === "Enter"){
-               route()
-        }
+               console.log(target.value);
+            }
     })
-    console.log(test);
+    document.querySelector('search-box')
+        .shadowRoot.getElementById('button-search')
+        .addEventListener('click', ()=> {
+            console.log('teste');
+     })
+   
 }
 function loadHomePage(){
     const homePage =  page();
     const main = document.querySelector('#root')
-    main.replaceChildren(homePage)
-    eventSearch();
+    main.replaceChildren(homePage);   
 }
 
 loadHomePage()

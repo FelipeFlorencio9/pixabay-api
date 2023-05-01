@@ -9,13 +9,12 @@
         <link rel="stylesheet" href="./css/header.css" />
         <link rel="stylesheet" href="./css/pixabay.css" />
         <link rel="stylesheet" href="./css/logo.css" />
-        <!-- <link rel="stylesheet" href="./css/search.css" />
-        <link rel="stylesheet" href="./css/pagination.css" />
-        <link rel="stylesheet" href="./css/gallery.css" />
-        <link rel="stylesheet" href="./css/card.css" /> -->
-        <script src="./components/phrase.js"></script>
-        <script src="./components/search-box.js"></script>
+        <link rel="stylesheet" href="./css/photos.css">
+        <script src="./components/Phrase.js"></script>
+        <script src="./components/SearchBox.js"></script>
+        <script src="./components/PhotosList.js"></script>
         <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="./css/menu-container.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -24,17 +23,17 @@
     </head>
     <body>
         <header>
-            <img 
-                src="./public/logo-128px.png" 
-                class='logo'
-                alt="Logo da PixaBay"
-                />
-            <a src='./public/search-32px.png' href="/search" onclick="route()"> 
-               teste
-            </a>
-               
-            
-            
+            <img src="./public/logo-128px.png" alt="">
+            <phrase-content
+                text="Why not look on Pixabay?"
+                tag="h1"
+                fontsize="2rem">
+            </phrase-content>
+            <nav class="menu-container">
+                <a href="/" onclick="route()">Recent</a>
+                <a href="/account" onclick="route()">Account</a>
+                <a href="/about" onclick="route()">About</a>
+            </nav>
         </header>
         <main id="root">
            

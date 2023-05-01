@@ -1,0 +1,81 @@
+.photos-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 8%;
+}
+
+.photos-list li{
+    position: relative;
+    width: 311px;
+    height: 242px;
+    flex-grow: 1;
+    
+
+}
+
+.photos-list img{
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    object-fit:cover;
+}
+.photo-info{
+    background-color: white;
+    position: absolute;
+    bottom: -64px ;
+    height: 64px;
+    width: 100%;
+    border-radius: 16px;
+    opacity: 0;
+    transition: all .3s;
+    display: flex;
+    justify-content: space-between;
+}
+.photos-list li:hover .photo-info{
+    transform: translateY(-64px);
+    opacity: 1;
+}
+.author-container{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+
+}
+.author-container img{
+    width: 48px;
+    height: 48px;
+}
+.author-container h2{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+.photo-categories{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 16px;
+}
+.photo-categories button{
+    height: 32px;
+    width: 32px;
+    background: transparent;
+    border: none;
+}
+.photo-options{}
+
+@media (max-width: 376px) {
+    .photo-info{
+        transition: all .5s;
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+}

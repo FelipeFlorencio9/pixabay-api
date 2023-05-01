@@ -2,8 +2,8 @@
 
 const routes = {
     '/'         : "/pages/home.js",
-    '/search' :     "/pages/search.js",
-    '/azul'     : "/pages/azul.js",
+    '/account' :  "/pages/account.js",
+    '/about'     : "/pages/about.js",
 }
 
 const route = () => {
@@ -13,16 +13,13 @@ const route = () => {
 }
 
 const handleLocation = async () => {
-    
     const path = window.location.pathname
-    
     const route = routes[path]
     const {page} = await import (route)
 
+    console.log (await page())
 
-    console.log (page())
-
-    document.getElementById('root').replaceChildren( page() ) 
+    document.getElementById('root').replaceChildren( await page() ) 
 }
 
 window.onpopstate = handleLocation

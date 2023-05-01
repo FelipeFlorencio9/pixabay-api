@@ -1,6 +1,6 @@
 'use stricts'
 
-class searchBox extends HTMLElement {
+class SearchBox extends HTMLElement {
     constructor() {
         super()
         this.shadow = this.attachShadow({mode: 'open'})
@@ -64,7 +64,7 @@ class searchBox extends HTMLElement {
         label.for = 'searchinput';
         label.id = 'button-search';
         label.href = '/search'
-        label.onclick = route;
+        label.onclicl
         const icon = document.createElement('img');
         icon.src = '../public/search-32px.png';
 
@@ -94,7 +94,7 @@ class searchBox extends HTMLElement {
 
     }
 
-customElements.define('search-box', searchBox);
+customElements.define('search-box', SearchBox);
 
 
 

@@ -1,0 +1,10 @@
+.menu-container{
+    display: flex;
+    gap: 2rem;
+}
+.menu-container a{
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    color: white;
+}

@@ -6,21 +6,18 @@
 }
 
 body {
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas: 
-        'header'
-        'main'
-        'footer';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 100vh;
     background-color: var(--primary-green);
     position: relative;
-
+    padding: 6px;
 }
 main{
     display: flex;
 }
-.home-container{
+.container{
     height: 100%;
     width: 100%;
     display: flex;

@@ -1,6 +1,6 @@
 'use stricts'
 
-class phrase extends HTMLElement {
+class Phrase extends HTMLElement {
     constructor() {
         super()
         this.shadow = this.attachShadow({mode: 'open'})
@@ -47,4 +47,4 @@ class phrase extends HTMLElement {
 
     }
 
-customElements.define('phrase-content', phrase);
+customElements.define('phrase-content', Phrase);

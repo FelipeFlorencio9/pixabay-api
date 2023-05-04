@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>🚀 Simple API consumption with js routes</h3>
-  <img style="height:720px"src="https://user-images.githubusercontent.com/107069825/236184023-bd917590-0f35-42f1-ac9b-576903051274.png"/>
+  <img src="https://user-images.githubusercontent.com/107069825/236184023-bd917590-0f35-42f1-ac9b-576903051274.png"/>
   
   
   ## 🛠 How to Work

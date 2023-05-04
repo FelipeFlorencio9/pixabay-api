@@ -40,7 +40,7 @@
   
   ## 📚 References
   Layout on [Figma](https://www.figma.com/file/YVQ8vrjOg3HpqpNz6O5Ela/Pixabay-API-2.0?t=1dE09cBHOHfxrT0U-6). </br>
-  Page hosted on [Netfly](https://pixabayapi-felipe.netlify.app/)
+  Page hosted on [Netfly](https://pixabayapi-felipe.netlify.app/).
 
   ## 👨‍🔧 Autor
 

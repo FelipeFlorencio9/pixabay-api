@@ -6,13 +6,13 @@ class Phrase extends HTMLElement {
         this.shadow = this.attachShadow({mode: 'open'})
         this.text = 'Defina uma frase para usar o componente'
         this.tag = 'h1',
-        this.fontsize = '1.5rem';
+        this.fontsizerem = '1.75';
         this.textalign = 'center';
         this.lineheight = '3rem';
     }
 
     static get observedAttributes() {
-        return ['text','tag','fontsize','textalign','lineheight']
+        return ['text','tag','fontsizerem','textalign','lineheight']
     }
 
 
@@ -30,13 +30,22 @@ class Phrase extends HTMLElement {
                     font-family: 'Poppins', sans-serif;
                     font-style: normal;
                     font-weight: 600;
-                    font-size: ${this.fontsize};
-                    line-height: ${this.lineheight};
+                    font-size: ${this.fontsizerem}rem;
                     letter-spacing: -0.07em;
                     color: #FFFFFF;
                     text-align: ${this.textalign}
                 }
-            `
+                @media (min-width: 680px) {
+                    .phrase {
+                        font-size: ${this.fontsizerem * 1.4}rem;
+                    }
+                }
+                @media (min-width: 1024px) {
+                    .phrase {
+                        font-size: ${this.fontsizerem * 2}rem;
+                    }
+                }   
+                            `
             return css
     }
     component(){

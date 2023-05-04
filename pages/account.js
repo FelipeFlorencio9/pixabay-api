@@ -15,10 +15,10 @@ export function page () {
         <phrase-content
             text="Login to Save Photos"
             tag="h2"
-            fontsize="1.5rem">
+            >
         </phrase-content>
         <input-box
-            placeholder='Login'
+            placeholder='Email'
         ></input-box>
         <input-box
             placeholder='Password'
@@ -26,7 +26,6 @@ export function page () {
         <phrase-content
             text="Sign Up"
             tag="h3"
-            fontsize="1.5rem"
             textAlign='end'>
         </phrase-content>
     `

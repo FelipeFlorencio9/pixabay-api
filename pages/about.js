@@ -16,22 +16,22 @@ export function page () {
         <phrase-content
             text="${DESCRIPTIONPIXABAY}"
             tag="p"
-            fontsize="16px"
-            textalign='center'>
+            textalign='center'
+            fontsizerem='1'>
         </phrase-content>
         <ul>
             <li>
                 <phrase-content
                     text="Adress:"
                     tag="p"
-                    fontsize="10px"
+                    fontsizerem="0.625"
                     textalign='center'
                     lineheight='0'>
                 </phrase-content>
                 <phrase-content
                     text="${CONTACTS.adress}"
                     tag="p"
-                    fontsize="10px"
+                    fontsizerem="0.625"
                     textalign='center'
                     lineheight='0'>
                 </phrase-content>
@@ -40,14 +40,14 @@ export function page () {
                 <phrase-content
                     text="Telefone:"
                     tag="p"
-                    fontsize="10px"
+                    fontsizerem="0.625"
                     textalign='center'
                     lineheight='0'>
                 </phrase-content>
                 <phrase-content
                     text="${CONTACTS.telefone}"
                     tag="p"
-                    fontsize="10px"
+                    fontsizerem="0.625"
                     textalign='center'
                     lineheight='0'>
                 </phrase-content>
@@ -56,14 +56,14 @@ export function page () {
                 <phrase-content
                     text="Endereço de Email:"
                     tag="p"
-                    fontsize="10px"
+                    fontsizerem="0.625"
                     textalign='center'
                     lineheight='0'>
                 </phrase-content>
                 <phrase-content
                     text="${CONTACTS.email}"
                     tag="p"
-                    fontsize="10px"
+                    fontsizerem="0.625"
                     textalign='center'
                     lineheight='0'>
                 </phrase-content>

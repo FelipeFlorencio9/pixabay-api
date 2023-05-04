@@ -29,7 +29,7 @@ class InputBox extends HTMLElement {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 32px;
+                // height: 32px;
                 position: relative;
             }
             .input {
@@ -38,13 +38,13 @@ class InputBox extends HTMLElement {
                 font-weight: 400;
                 line-height: 24px;
                 letter-spacing: 0.5px;
-                height: 100%;
+                height: 56px;
                 font-size: 24px;
                 border: 1px solid #EDEEF0;
                 box-shadow: 0px 2px 20px rgba(18, 27, 33, 0.1);
                 border-radius: 56px;
                 padding: 12px 12px 12px 44px;
-                width: 303px;
+                width: 100%;
 
             }
             a{

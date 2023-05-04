@@ -1,6 +1,6 @@
 .menu-container{
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 .menu-container a{
     text-decoration: none;
@@ -8,3 +8,20 @@
     font-size: 1rem;
     color: white;
 }
+
+@media (min-width: 680px) {
+    .menu-container{
+        gap: 3rem;
+    }
+    .menu-container a {
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 1024px) {
+    .menu-container{
+        gap: 4rem;
+    }
+    .menu-container a {
+        font-size: 2.4rem;
+    }
+}  

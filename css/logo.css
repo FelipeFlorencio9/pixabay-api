@@ -1,4 +1,16 @@
-.logo img{
+.logo {
     grid-area: header;
     display: grid;
 }
+
+
+@media (min-width: 680px) {
+    .logo  {
+        content: url(../public/logo-256px.png); 
+    }
+}
+/* @media (min-width: 1024px) {
+    .logo  {
+        content: url(../public/logo-256px.png); 
+    }
+}   */

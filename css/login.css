@@ -11,6 +11,9 @@
     flex-direction: column;
     justify-content: space-between;
     height: 24rem;
-    transform: translateY(-16%);
+    width: 80%;
+    /* transform: translateY(-16%); */
 
 }
+
+

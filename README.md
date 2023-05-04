@@ -19,10 +19,15 @@
   It is part of a [Senai de Jandira activity](https://github.com/fernandoleonid/api-publicas-2023). Past content from [Fernando Leonid's repository.](https://github.com/fernandoleonid/router-vanillajs)
 
  
-  ## 🗂 Directories
-  The page is based on simple routes that change the base in the main division of the app.
-  You can create scalable alternative routes from the example.
-  
+  ## 💡 Ideas
+  - More photo informations
+  - Search Box by query strinf
+  - Time filter (latest, old)
+  - Category filter.
+  - more...
+
+
+
   
   ## ⚙ Tecnologies
   ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)

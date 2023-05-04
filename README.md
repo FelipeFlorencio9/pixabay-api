@@ -21,7 +21,7 @@
  
   ## 💡 Ideas
   - More photo informations
-  - Search Box by query strinf
+  - Search Box by query string
   - Time filter (latest, old)
   - Category filter.
   - more...

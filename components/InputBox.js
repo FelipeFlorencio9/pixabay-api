@@ -5,11 +5,14 @@ class InputBox extends HTMLElement {
         super()
         this.shadow = this.attachShadow({mode: 'open'})
         this.placeholder = 'PlaceHolder Default';
-        this.boxValue = 'Search'
+        this.boxValue = 'Search';
+        this.unity = 'px'
+        this.height = '20' + this.unity;
+        this.width = '72%';
     }
 
     static get observedAttributes() {
-        return ['placeholder']
+        return ['placeholder','boxValue']
     }
 
 
@@ -38,13 +41,13 @@ class InputBox extends HTMLElement {
                 font-weight: 400;
                 line-height: 24px;
                 letter-spacing: 0.5px;
-                height: 56px;
+                height: ${this.height};
                 font-size: 24px;
                 border: 1px solid #EDEEF0;
                 box-shadow: 0px 2px 20px rgba(18, 27, 33, 0.1);
                 border-radius: 56px;
                 padding: 12px 12px 12px 44px;
-                width: 100%;
+                width: ${this.width};
 
             }
             a{
@@ -83,17 +86,18 @@ class InputBox extends HTMLElement {
         input.id = 'input';
 
         
-        // input.addEventListener('keypress', ({key,target}) => {
-        //     if(key === 'Enter'){
-        //         window.localStorage.setItem('query', target.value);
-        //     }
-        // })
+        input.addEventListener('keypress', ({key,target}) => {
+            if(key === 'Enter'){
+                window.localStorage.setItem('query', target.value);
+            }
+        })
         
         search.append(
             input
         )
         return search;
     }
+    
         
 
     }

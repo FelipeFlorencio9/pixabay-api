@@ -4,6 +4,7 @@ const routes = {
     '/'         : "/pages/home.js",
     '/account' :  "/pages/account.js",
     '/about'     : "/pages/about.js",
+    '/videos'     : "/pages/videos.js",
 }
 
 const route = () => {

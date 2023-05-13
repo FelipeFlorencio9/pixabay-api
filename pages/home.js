@@ -1,4 +1,4 @@
-import { fetchPhotos } from "../api/config.js"
+import { fetchPhotosByOrder } from "../api/config.js"
 
 export async function page () {
 
@@ -10,7 +10,7 @@ export async function page () {
         'home-container',
         'container'
     )
-    const photos = await fetchPhotos();
+    const photos = await fetchPhotosByOrder('latest');
     const {hits} = photos;
     
     const listOfPhotos = document.createElement('ul');
@@ -28,7 +28,7 @@ export async function page () {
                 <img src='${userImageURL}'/>
                 <h2>${user}</h2>
             </div>
-            <button class='download-btn' onclik='${largeImageURL}'>
+            <button class='download-btn' onclick='${largeImageURL}'>
                 <image src='./public/download-button32.png'/>
             </button>
           </div>

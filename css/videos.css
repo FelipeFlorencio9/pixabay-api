@@ -1,0 +1,8 @@
+.videos_container{}
+
+.videos__info{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5%;
+}
